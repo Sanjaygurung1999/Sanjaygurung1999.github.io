@@ -1,0 +1,942 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 1.2em;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.heading-text{
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 2.2em;
+    font-family: "Dela Gothic One";
+}
+.borderhighlight-span{
+    color: #007BFF;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.custom-btn{
+    border-radius: 5px;
+    font-weight: bold;
+    border:none;
+    background-color: #007BFF;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding:10px 15px;
+}
+.custom-btn:hover{
+    cursor: pointer;
+}
+.light-text{
+    color: #33272A;
+}
+.dark-text{
+    color: white;
+}
+.hide-being{
+    display: none;
+}
+.show-being{
+    display: block;
+}
+.borderunderline-span{
+    border-bottom: 2px solid #007BFF;
+}
+.darkmode-fill{
+    fill: white;
+}
+/* ---------------First body----------------*/
+#mobile_nav{
+    position: absolute;
+    z-index: 99;
+    height: 0;
+    top: 120px;
+    width: 100%;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    transition: opacity 1.5s ease-in-out;
+    opacity: 0;
+}
+.mobile_link{
+    display: flex;
+    background-color: white;
+    justify-content: end;
+    font-size: 1.1em;
+    padding: 40px 20px;
+    transition: opacity 1.5s ease-in-out;
+}
+#bgr_menu{
+    display: none;
+}
+.num1{
+    position: relative;
+    left: 10%;
+    top: 20%;
+    height: 150px;
+    width: 200px;
+}
+.num2{
+    position: relative;
+    left: 20%;
+    top: 50%;
+    height: 75px;
+    width: 100px;
+}
+.num3{
+    position: relative;
+    left: 60%;
+    top: 25%;
+    height: 100px;
+    width: 150px;
+}
+.firstbody{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #E0EBE8;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top:0;
+    justify-content: space-between;
+    padding: 15px 15%;
+    align-items: center;
+    color: #007BFF;
+}
+.nav_cont{
+    display: flex;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+.nav_links{
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin: 0 15px;
+}
+.nav_links a:hover{
+    cursor: pointer;
+}
+.firstbody_name{
+    margin: 0;
+    font-family: "Dela Gothic One";
+    color: #007BFF;
+    font-size: 5em;
+    text-align: center;
+}
+.firstbody_skill{
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    color: #007BFF;
+}
+.firstbody_text{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.firstbody_icons{
+    position: absolute;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+.firstbody_popup{
+    top: 70%;
+    opacity: 0.9;
+    transform: rotate(-30deg);
+    left: 75%;
+    position: absolute;
+}
+.beings{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+#sun_img{
+    position: absolute;
+    animation: circleAround 2s linear infinite;
+    transition: opacity 1s ease-in-out;
+}
+#moon_img{
+    position: absolute;
+    margin: 10px 0 0 10px;
+    width: 50px;
+    opacity: 0;
+    height: 0;
+    animation: circleAround 2s linear infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+/* ---------------About Me------------------*/
+#aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+.aboutme-img{
+    padding: 5px;
+    margin-right: 40px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    object-fit: cover;
+}
+.pattern-fst{
+    position: absolute;
+    left: -22%;
+    height: 60%;
+    margin-bottom: 5%;
+}
+.pattern-sec{
+    position: absolute;
+    margin-top: 10%;
+    right: -22%;
+    height: 60%;
+}
+
+/* ----------------Contact----------------*/
+#contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.contact-text-sec{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.contact-mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 3px solid #33272A;
+}
+.contact-mail p{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-mail button:hover{
+    cursor: pointer;
+}
+.contact-social{
+    margin: 20px 0px;
+    display: flex;
+}
+.contact-social img{
+    margin-left: 10px;
+}
+.contact-social img:hover{
+    cursor: pointer;
+}
+
+/*-------------- project -----------------*/
+#project{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.svgs{
+    position: relative;
+    top: 5px;
+    right: 12px;
+    fill: rgb(108, 101, 101);
+}
+.project-labels{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-labels-cont label{
+    width: 100%;
+}
+.project-cont{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project-image-cont{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+.project-img{
+    position: absolute;
+    border-radius: 10px;
+    width: 180px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.project-img:hover{
+    animation: riseUp 0.2s ease-in-out;
+    z-index: 99;
+    margin-top: 0px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.project-img-fst{
+    margin-right: 190px;
+    margin-top: 15px;
+}
+.project-img-sec{
+    z-index: 3;
+    margin-top: -5px;
+}
+.project-img-trd{
+    margin-left: 190px;
+    margin-top: 15px;
+}
+.project-and-img-fst{
+    margin-right: 190px;
+    margin-top: 15px;
+}
+.project-and-img-sec{
+    z-index: 3;
+}
+.project-and-img-trd{
+    margin-top: 15px;
+    margin-left: 190px;
+}
+.project-and-img-fourth{
+    margin-right: 270px;
+    margin-top: 25px;
+}
+.project-and-img-fifth{
+    margin-top: 25px;
+    margin-left: 270px;
+}
+.project-title{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+.project-type{
+    font-size: 0.6em;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #007BFF;
+}
+.project-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.project-btn-cont{
+    margin-top: 20px;
+    display: flex;
+}
+.project-btn{
+    border-radius: 5px;
+    width: 100px;
+    padding: 4px 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border:none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: #007BFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.project-btn:first-child {
+    background-color: #007BFF;
+    color: white;
+    margin-right: 10px;
+  }
+
+/* --------------Dark Mode-----------------*/
+.dark-mode{
+    background-color: #04001F;
+}
+.dark-mode-bg{
+    background-color: #04001ff9;
+}
+.dark-mode-txt{
+    color:#fffafa;
+}
+.dark-mode-fill{
+    fill: #fffafa;
+}
+
+/*---- Tab layout ----------------------*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+h1 {
+	color: #ccc;
+	text-align: center;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+
+/*Fun begins*/
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20px;
+	position: relative;
+}
+
+#tab1,#tab2,#tab3, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.9em;
+  display: block;
+  float: left;
+  padding: 0.8em;
+  color: rgb(108, 101, 101);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.tab_container .tab-content div,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+color: #007BFF;
+border-bottom:3px solid #007BFF;
+}
+
+.tab_container [id^="tab"]:checked + label .svgs {
+    fill:#007BFF ;
+  color: #0CE;
+}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 98%;
+  }
+  .svgs{
+    right: 0;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}
+
+@keyframes riseUp {
+    0% {
+        margin-bottom: 15px;
+    }
+    20%{
+        margin-bottom: 12px;
+    }
+    40%{
+        margin-bottom: 9px;
+    }
+    60%{
+        margin-bottom: 6px;
+    }
+    80%{
+        margin-bottom: 3px;
+    }
+    100% {
+        margin-bottom: 0px;
+    }
+  }
+
+.no_wrap {
+  text-align:center;
+  color: #0ce;
+}
+.link {
+  text-align:center;
+}
+
+/*------------- Scroll down ---------------*/
+.mouse_scroll {
+    position: absolute;
+	display: flex;
+    flex-direction: column;
+	height: 80px;
+    width: 100%;
+    align-items: center;
+    bottom: 0;
+}
+.mouse_scroll:hover{
+    cursor: pointer;
+}
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid #007BFF;
+  border-bottom: 2px solid #007BFF;
+  width: 12px;
+  height: 12px;
+}
+
+/* For dark mode btn */
+#mode_switch{
+    -webkit-appearance: none;
+    position: relative;
+    margin-left: 20px;
+    width: 60px;
+    height: 30px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    outline: none;
+    transition: background-image .90s;
+    background-image: url(/icons/sun.svg);
+    border: 2.5px solid #4AD295;
+}
+#mode_switch:before {
+    content: "";
+    position: absolute;
+    top: 1.5px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 50px;
+    transition: all .9s;
+    background-color: #e4af03;
+  }
+#mode_switch:checked {
+    background-image: url(/icons/moon.svg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image .90s;
+  
+  }
+#mode_switch:checked:before {
+    transform: translate(130%);
+    transition: all .9s;
+    background-color: #ECF0F3;
+}
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 35px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid #007BFF;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #007bffd8;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #007BFF;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+
+
+/* -------------Animations---------------------*/
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-right: 0px;
+    }
+    100% {
+        margin-right: 5%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-right: -0px;
+    }
+    100% {
+        margin-right: 5%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-right: 0px;
+    }
+    100% {
+        margin-right: 5%;
+    }
+}
+@keyframes circleAround {
+    from { transform: rotate(0deg) translateY(1px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(1px) rotate(-360deg); }
+}
+.num1{
+	-webkit-animation: animateCloud 35s alternate ease-in infinite;
+	-moz-animation: animateCloud 35s alternate ease-in infinite;
+	animation: animateCloud 35s alternate ease-in infinite;
+}
+.num2{
+	-webkit-animation: animateCloud 40s alternate ease-in-out infinite;
+	-moz-animation: animateCloud 40s alternate ease-in-out infinite;
+	animation: animateCloud 40s alternate ease-in-out infinite;
+}
+
+.num3{
+	-webkit-animation: animateCloud 40s alternate ease-in-out infinite;
+	-moz-animation: animateCloud 40s alternate ease-in-out infinite;
+	animation: animateCloud 40s alternate ease-in-out infinite;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .project-img{
+        position: absolute;
+        border-radius: 10px;
+        width: 150px;
+        height: 300px;
+        object-fit: cover;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .project-img-fst{
+        margin-right: 165px;
+        margin-top: 15px;
+    }
+    .project-img-sec{
+        z-index: 3;
+        margin-top: -5px;
+    }
+    .project-img-trd{
+        margin-left: 165px;
+        margin-top: 15px;
+    }
+    .project-and-img-fst{
+        margin-right: 160px;
+        margin-top: 15px;
+    }
+    .project-and-img-sec{
+        z-index: 3;
+    }
+    .project-and-img-trd{
+        margin-top: 15px;
+        margin-left: 160px;
+    }
+    .project-and-img-fourth{
+        margin-right: 210px;
+        margin-top: 25px;
+    }
+    .project-and-img-fifth{
+        margin-top: 25px;
+        margin-left: 210px;
+    }
+    #bgr_menu{
+        display: block;
+    }
+    .nav_cont{
+        display: none;
+    }
+    nav{
+        padding: 25px 5%;
+    }
+    .firstbody_popup{
+        display: none;
+    }
+    .num1{
+        left: 10%;
+        top: 17%;
+        height: 90px;
+        width: 135px;
+    }
+    .num2{
+        left: 20%;
+        top: 70%;
+        height: 75px;
+        width: 100px;
+    }
+    .num3{
+        display: none;
+    }
+    .firstbody_name{
+        margin: 0;
+        font-family: "Dela Gothic One";
+        font-size: 4em;
+        text-align: center;
+    }
+    
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow-x: hidden;
+        z-index: 1;
+        font-size: 0.8em;
+        line-height: 1.8;
+    }
+    .pattern-fst,.pattern-sec{
+       display: none;
+    }
+    .aboutme-img{
+        margin-right: 0px;
+    }
+    .aboutme_secbdy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact{
+        font-size: 0.8em;
+    }
+    .contact-mail{
+        padding: 15px;
+        border-radius: 10px;
+        border: 3px solid #33272A;
+    }
+  }
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+    nav{
+        font-size: 1.5em;
+        padding: 25px 5%;
+    }
+    .firstbody_name{
+        margin: 0;
+        font-family: "Dela Gothic One";
+        font-size: 5em;
+        text-align: center;
+    }
+    .firstbody_skill{
+        font-size: 1.2em;
+     }
+    .num3{
+        position: relative;
+        left:30%;
+        top: 25%;
+        height: 100px;
+        width: 150px;
+    }
+    #aboutme{
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+    .pattern-fst{
+        position: absolute;
+        left: -28%;
+        height: 30%;
+        margin-bottom: 5%;
+    }
+    .pattern-sec{
+        position: absolute;
+        margin-top: 10%;
+        right: -28%;
+        height: 30%;
+    }
+    .aboutme-img{
+        height: 220px;
+        width: 220px;
+        margin-right: 0px;
+    }
+    .aboutme_secbdy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact{
+        font-size: 1.2em;
+    }
+    .contact-mail{
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: 3px solid #33272A;
+    }
+    .custom-btn{
+        font-size: 1.1em;
+    }
+}

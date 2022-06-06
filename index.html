@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="burg/burg.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="mobile_nav">
+            <div class="mobile_link">
+                <a style="color: #007BFF;" class="nav_links only_txt " id="about_me" href="#aboutme">About Me</a>
+            </div>
+            <div class="mobile_link">
+                <a style="color: #007BFF;" class="nav_links only_txt" href="#project">Projects</a>
+            </div>
+            <div class="mobile_link">
+                <a style="color: #007BFF;" class="nav_links only_txt" href="#contact">Contact</a>
+            </div>
+        </div>
+       <div class="firstbody" id="firstbody">
+           <div class="firstbody_icons">
+               <img class="clouds num1" src="./icons/cloud.svg"/>
+               <img class="clouds num2" src="./icons/cloud.svg"/>
+               <img class="clouds num3" src="./icons/cloud.svg"/>
+           </div>
+           <nav>
+               <!--
+                   <div class="beings">
+                        <img id="moon_img" src="icons/moon.png">
+                        <img id="sun_img"  src="icons/sun.png">
+                    </div>
+               -->
+               <div class="beings">
+                    <input id="mode_switch" type="checkbox" onclick="switchMode()">
+               </div>
+                <div class="nav_cont">
+                    <a class="nav_links only_txt" id="about_me" href="#aboutme">About Me</a>
+                    <a class="nav_links only_txt" href="#project">Projects</a>
+                    <a class="nav_links only_txt" href="#contact">Contact</a>
+                </div>
+                <button id="bgr_menu" class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </nav>
+           
+           <div class="firstbody_text">
+                <h2 class="firstbody_name only_txt">
+                    I'm Sanjay.
+                </h2>
+                <p class="firstbody_skill only_txt">
+                A Web / Android Developer
+                </p>
+           </div>
+           <!--
+               <div class="firstbody_popup">
+               <img id="mo" style="width: 35px;" src="./icons/guitar.png">
+           </div>
+           -->
+            <div class="mouse_scroll" onClick="document.getElementById('aboutme').scrollIntoView();">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                </div>
+            </div>
+       </div>
+       <div id="aboutme" class="light-text only_bg">
+            <img class="pattern-fst" src="icons/pattern.png"/>
+            <img class="pattern-sec" src="icons/pattern.png"/>
+            <!--
+                <div>
+                    <img class="aboutme-img" src="./img/mypic.jpg">
+                </div>
+            -->
+           <div class="aboutme_secbdy">
+               <h2 class="heading-text only_txt">
+                   About Me 
+               </h2>
+               <p class="only_txt">
+                <span class="borderhighlight-span only_txt">Hello there,</span><br> I am a Computer Engineer Graduate from<br> Pokhara University.<br>
+                <br>
+                I specialize in building Web Apps and Android<br> Apps using <span class="borderunderline-span">HTML/CSS/JS/Java</span> and Frameworks<br> such as <span class="borderunderline-span">React,BootStrap</span> etc
+               </p>
+               <button style="margin-top: 40px;" class="custom-btn">Download CV</button>
+           </div>
+       </div>
+       <div id="project" class="only_bg">
+            <h2 style="text-align: center;" class="heading-text only_txt">
+               My Projects 
+            </h2>
+            <div class="tab_container">
+                <div class="project-labels">
+                    <div class="project-labels-cont">
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1">
+                        <svg class="svgs only_fill" width="24px" height="24px" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" enable-background="new 0 0 52 52" xml:space="preserve">
+                            <path d="M31.6,21.6c-1.2,0-2.2-1-2.2-2.2V5.5c0-1.2,1-2.2,2.2-2.2h14.2c1.2,0,2.2,1,2.2,2.2v13.9
+                                c0,1.2-1,2.2-2.2,2.2H31.6z" />
+                            <path d="M37.7,29.8l-8.2,8.9c-0.5,0.5-0.5,1.3,0,1.9l8.2,8.9c0.5,0.6,1.5,0.6,2,0l8.2-8.9c0.5-0.5,0.5-1.3,0-1.9
+                                l-8.2-8.9C39.2,29.2,38.3,29.2,37.7,29.8z" />
+                            <circle cx="13" cy="39.4" r="9.3" />
+                            <path d="M4.8,6.5l7.2-4.1c0.7-0.4,1.5-0.4,2.1,0l7.1,4.1c0.7,0.4,1.1,1.1,1.1,1.9v8.2c0,0.8-0.4,1.5-1.1,1.9
+                                l-7.1,4.1c-0.7,0.4-1.5,0.4-2.1,0l-7.2-4.1c-0.7-0.4-1.1-1.1-1.1-1.9V8.4C3.7,7.6,4.1,6.9,4.8,6.5z" />
+                        </svg>
+                        <span class="only_txt">All</span>
+                        </label>
+                    </div>
+                    <div class="project-labels-cont">
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2">
+                        <svg class="svgs only_fill" width="24px" height="24px" viewBox="-2 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.11 5.12c.311 0 .562-.252.562-.562s-.252-.562-.562-.562c-.003 0-.006 0-.01 0-.15 0-.285.064-.379.165-.098.103-.159.243-.159.397s.06.294.159.397c.095.102.23.166.38.166h.011-.001zm6.087 0h.01c.15 0 .285-.064.379-.165.098-.103.159-.243.159-.397s-.06-.294-.159-.397c-.095-.102-.23-.166-.38-.166-.004 0-.007 0-.011 0h.001c-.311 0-.562.252-.562.562s.252.562.562.562zm-11.711 2.654c.811.004 1.468.66 1.471 1.471v6.202.028c0 .4-.163.763-.426 1.025-.257.267-.617.433-1.017.433-.01 0-.02 0-.031 0h.002c-.002 0-.005 0-.008 0-.816 0-1.478-.662-1.478-1.478 0-.003 0-.005 0-.008v-6.202c0-.006 0-.014 0-.021 0-.4.166-.761.433-1.019.26-.266.623-.431 1.025-.431h.029-.001zm15.288.274v9.606.029c0 .429-.177.818-.462 1.096-.276.285-.662.462-1.089.462-.008 0-.015 0-.023 0h.001-1.082v3.274c0 .82-.665 1.486-1.486 1.486s-1.486-.665-1.486-1.486v-3.274h-1.99v3.274.008c0 .816-.662 1.478-1.478 1.478-.003 0-.006 0-.008 0-.006 0-.014 0-.021 0-.4 0-.761-.166-1.019-.433-.267-.261-.433-.624-.433-1.026 0-.009 0-.019 0-.028v.001l-.014-3.274h-1.066c-.003 0-.007 0-.01 0-.87 0-1.576-.706-1.576-1.576 0-.004 0-.007 0-.011v.001-9.606zm-3.346-5.84c1.017.52 1.85 1.272 2.452 2.19l.015.024c.579.866.923 1.932.923 3.077v.032-.002h-13.342c0-.009 0-.02 0-.031 0-1.146.345-2.211.936-3.098l-.013.02c.619-.944 1.457-1.696 2.444-2.197l.036-.017-1.024-1.89c-.025-.032-.04-.072-.04-.116 0-.076.045-.142.11-.172h.001c.03-.019.067-.031.107-.031.08 0 .15.048.182.116l.001.001 1.04 1.904c.854-.383 1.85-.606 2.899-.606s2.045.223 2.945.624l-.046-.018 1.04-1.904c.032-.07.102-.117.182-.117.04 0 .076.012.108.031h-.001c.066.03.112.096.112.173 0 .044-.015.084-.04.116zm6.88 7.04v6.202.008c0 .816-.662 1.478-1.478 1.478-.003 0-.006 0-.008 0-.006 0-.014 0-.021 0-.4 0-.761-.166-1.019-.433-.267-.261-.433-.624-.433-1.026 0-.009 0-.019 0-.028v.001-6.202c0-.009 0-.019 0-.029 0-.399.166-.76.433-1.016.259-.263.619-.426 1.017-.426h.024-.001.028c.4 0 .763.163 1.025.426.267.257.433.617.433 1.017v.027-.001z"/></svg>  
+                        <span class="only_txt">Android</span></label>
+                    </div>
+                    <div class="project-labels-cont">
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3">
+                        <svg class="svgs only_fill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="24px" height="24px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve">
+                            <path id="XMLID_1666_" d="M46,0C20.6,0,0,20.6,0,46s20.6,46,46,46s46-20.6,46-46S71.4,0,46,0z M49.7,83.8c-0.2,0-0.4,0-0.7,0.1V62.2
+                                c5.2-0.1,9.9-0.2,14.2-0.5C59.4,73.4,52.3,81.2,49.7,83.8z M42.3,83.8c-2.7-2.7-9.7-10.5-13.5-22.1c4.2,0.3,9,0.5,14.2,0.5v21.7
+                                C42.8,83.9,42.6,83.8,42.3,83.8z M8,46c0-2.5,0.3-5,0.7-7.4c2.2-0.4,6.4-1,12.3-1.6c-0.5,2.9-0.8,5.9-0.8,9.1c0,3.2,0.3,6.2,0.7,9
+                                c-5.8-0.6-10.1-1.2-12.3-1.6C8.3,51,8,48.5,8,46z M26.3,46c0-3.4,0.4-6.6,1-9.6c4.6-0.3,9.8-0.6,15.7-0.6v20.4
+                                c-5.8-0.1-11.1-0.3-15.8-0.7C26.7,52.6,26.3,49.4,26.3,46z M49.6,8.2c2.7,2.7,9.6,10.7,13.5,22.1c-4.2-0.3-8.9-0.5-14.1-0.5V8.1
+                                C49.2,8.1,49.4,8.2,49.6,8.2z M43,8.1v21.7c-5.2,0.1-9.9,0.2-14.1,0.5c3.8-11.4,10.8-19.4,13.4-22.1C42.6,8.2,42.8,8.1,43,8.1z
+                                    M49,56.2V35.8c5.8,0.1,11.1,0.3,15.7,0.6c0.6,3,1,6.2,1,9.6c0,3.4-0.3,6.6-0.9,9.6C60.2,55.9,54.9,56.1,49,56.2z M70.9,37
+                                c5.9,0.6,10.1,1.2,12.3,1.6C83.7,41,84,43.5,84,46c0,2.5-0.3,5-0.7,7.4c-2.2,0.4-6.4,1-12.3,1.6c0.5-2.9,0.7-5.9,0.7-9.1
+                                C71.7,42.9,71.4,39.8,70.9,37z M81.4,32.2c-2.8-0.4-6.8-0.9-11.9-1.4c-2.4-8.6-6.6-15.5-10.1-20.4C69.5,14.2,77.5,22.2,81.4,32.2z
+                                    M32.6,10.4c-3.6,4.8-7.7,11.7-10.1,20.3c-5,0.4-9,1-11.9,1.4C14.5,22.2,22.6,14.2,32.6,10.4z M10.6,59.8c2.8,0.4,6.8,0.9,11.8,1.4
+                                c2.4,8.6,6.4,15.5,10,20.3C22.4,77.6,14.5,69.7,10.6,59.8z M59.6,81.5c3.6-4.8,7.6-11.6,10-20.2c5-0.4,9-1,11.8-1.4
+                                C77.5,69.7,69.6,77.6,59.6,81.5z"/>
+                        </svg>
+                        <span class="only_txt">Web</span></label>
+                    </div>
+                </div>
+                <section id="content1" class="tab-content">
+                   <div class="project-cont">
+                       <div class="project-items">
+                           <div class="project-image-cont">
+                                <img class="project-img project-img-fst" src="images/recipe2.png"/>
+                                <img style="animation:none" class="project-img project-img-sec" src="images/recipe.png"/>
+                                <img class="project-img project-img-trd" src="images/recipe3.png"/>
+                           </div>
+                           <p class="project-title only_txt">Recipe Finder</p>
+                           <span class="project-type">Web</span>
+                           <div class="project-btn-cont">
+                                <a class="project-btn" target="_blank" href="https://github.com/Sanjaygurung1999/recipefinderweb">
+                                    View Code
+                                </a>
+                                <a class="project-btn" target="_blank" href="https://github.com/Sanjaygurung1999/recipefinderweb">
+                                    Demo
+                                </a>
+                           </div>
+                       </div>
+                       <div class="project-items">
+                           <div class="project-image-cont">
+                                <img class="project-img project-and-img-fourth" src="images/guidy4.jpg"/>
+                                <img class="project-img project-and-img-fst" src="images/guidy2.jpg"/>
+                                <img style="animation:none" class="project-img project-and-img-sec" src="images/guidy.jpg"/>
+                                <img class="project-img project-and-img-fifth" src="images/guidy5.jpg"/>
+                                <img class="project-img project-and-img-trd" src="images/guidy3.jpg"/>
+                           </div>
+                           <p class="project-title only_txt">Guidy</p>
+                           <span class="project-type">Android</span>
+                           <div class="project-btn-cont">
+                               <button class="project-btn">View Code</button>
+                           </div>
+                       </div>
+                   </div>
+                </section>
+
+                <section id="content2" class="tab-content">
+                    <div class="project-cont">
+                        
+                        <div class="project-items">
+                            <div class="project-image-cont">
+                                 <img class="project-img project-and-img-fourth" src="images/guidy4.jpg"/>
+                                 <img class="project-img project-and-img-fst" src="images/guidy2.jpg"/>
+                                 <img style="animation:none" class="project-img project-and-img-sec" src="images/guidy.jpg"/>
+                                 <img class="project-img project-and-img-fifth" src="images/guidy5.jpg"/>
+                                 <img class="project-img project-and-img-trd" src="images/guidy3.jpg"/>
+                            </div>
+                            <p class="project-title only_txt">Guidy</p>
+                            <span class="project-type">Android</span>
+                            <div class="project-btn-cont">
+                                <button class="project-btn">View Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content3" class="tab-content">
+                    <div class="project-cont">
+                        <div class="project-items">
+                            <div class="project-image-cont">
+                                 <img class="project-img project-img-fst" src="images/recipe2.png"/>
+                                 <img style="animation:none" class="project-img project-img-sec" src="images/recipe.png"/>
+                                 <img class="project-img project-img-trd" src="images/recipe3.png"/>
+                            </div>
+                            <p class="project-title only_txt">Recipe Finder</p>
+                            <span class="project-type">Web</span>
+                            <div class="project-btn-cont">
+                                <button class="project-btn">View Code</button>
+                                <button class="project-btn">Demo</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+       </div>
+        <div id="contact" class="light-text only_bg">
+           <h2 class="heading-text only_txt">Get In Touch</h2>
+           <div class="contact-mail only_txt">
+               <p>Want to work together or have any questions?</p>
+               <button class="custom-btn"><a target="_top" href="mailto:jason28grg@gmail.com?subject=Comments about the color blue" style="text-decoration: none; color:white">Say Hello 👋</a></button>
+           </div>
+           <div class="contact-social">
+                <a target="_blank" href="https://github.com/Sanjaygurung1999">
+                    <svg class="icons" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/>
+                    </svg>
+                </a>  
+                <a target="_blank" href="https://www.instagram.com/gurungsanjayy/">
+                    <svg class="icons" style="margin-left:10px ;" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z"/>
+                            <path fill-rule="nonzero" d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
+                        </g>
+                    </svg>
+                </a>
+           </div>
+           <p class="contact-text-sec only_txt">Designed and Developed by <span class="borderhighlight-span">Sanjay Gurung</span></p>
+       </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+    $("a[href^='#']").click(function(event) {
+        event.preventDefault();
+        var location = $(this.hash);
+        var offset = 0;
+                var speed = 800;
+
+        $("html,body").animate({
+                scrollTop: location.offset().top - offset
+            }, speed );
+            return false
+    });
+    </script>
+    <script>
+        var tab1=document.getElementById("tab1");
+        var tab2=document.getElementById("tab2");
+        var tab3=document.getElementById("tab3");
+        var content1=document.getElementById("content1");
+        var content2=document.getElementById("content2");
+        var content3=document.getElementById("content3");
+        tab1.addEventListener('click',function(){
+            changeSection(1);
+        });
+        tab2.addEventListener('click',function(){
+            changeSection(2);
+        });
+        tab3.addEventListener('click',function(){
+            changeSection(3);
+        });
+        // calling tab at first
+        changeSection(1);
+        var bgr_menu=document.getElementById("bgr_menu");
+        var mobile_nav=document.getElementById("mobile_nav");
+        //var sun_img=document.getElementById("sun_img");
+        //var moon_img=document.getElementById("moon_img");
+        var firstbody=document.getElementById("firstbody");
+        var only_bg = document.getElementsByClassName("only_bg");
+        var only_txt = document.getElementsByClassName("only_txt");
+        var only_fill = document.getElementsByClassName("only_fill");
+        var icons = document.getElementsByClassName("icons");
+        function switchMode(){
+            firstbody.classList.toggle("dark-mode");
+            for (var i = 0; i < only_txt.length; i++) {
+                only_txt[i].classList.toggle("dark-mode-txt");
+            }
+            for (var i = 0; i < only_fill.length; i++) {
+                only_fill[i].classList.toggle("dark-mode-fill");
+            }
+            for (var i = 0; i < only_bg.length; i++) {
+                only_bg[i].classList.toggle("dark-mode-bg");
+            }
+            for (var i = 0; i < icons.length; i++) {
+                icons[i].classList.toggle("darkmode-fill");
+            }
+        }
+        /*sun_img.addEventListener('click',function(){
+            firstbody.classList.toggle("dark-mode");
+            for (var i = 0; i < only_txt.length; i++) {
+                only_txt[i].classList.toggle("dark-mode-txt");
+            }
+            for (var i = 0; i < only_fill.length; i++) {
+                only_fill[i].classList.toggle("dark-mode-fill");
+            }
+            for (var i = 0; i < only_bg.length; i++) {
+                only_bg[i].classList.toggle("dark-mode-bg");
+            }
+            for (var i = 0; i < icons.length; i++) {
+                icons[i].classList.toggle("darkmode-fill");
+            }
+            sun_img.style.opacity="0";
+            sun_img.style.height="0";
+            moon_img.style.opacity="1";
+            moon_img.style.height="auto";
+        });
+        moon_img.addEventListener('click',function(){
+            firstbody.classList.toggle("dark-mode");
+            for (var i = 0; i < only_txt.length; i++) {
+                only_txt[i].classList.toggle("dark-mode-txt");
+            }
+            for (var i = 0; i < only_fill.length; i++) {
+                only_fill[i].classList.toggle("dark-mode-fill");
+            }
+            for (var i = 0; i < only_bg.length; i++) {
+                only_bg[i].classList.toggle("dark-mode-bg");
+            }
+            for (var i = 0; i < icons.length; i++) {
+                icons[i].classList.toggle("darkmode-fill");
+            }
+            sun_img.style.opacity="1";
+            sun_img.style.height="auto";
+            moon_img.style.opacity="0";
+            moon_img.style.height="0";
+        });
+        */
+        bgr_menu.addEventListener('click',function(){
+            bgr_menu.classList.toggle("is-active");
+            if(mobile_nav.style.opacity==="1"){
+                mobile_nav.style.opacity="0";
+            }
+            else{
+                mobile_nav.style.opacity="1";
+            }
+        });
+        function changeSection(tabnum){
+            content1.style.display="none";
+            content2.style.display="none";
+            content3.style.display="none";
+            if(tabnum==1){
+                content1.style.display="block";
+            }
+            else if(tabnum==2){
+                content2.style.display="block";
+            }
+            else{
+                content3.style.display="block";
+            }
+        }
+    </script>
+</html>
